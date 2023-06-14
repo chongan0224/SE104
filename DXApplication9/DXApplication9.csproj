@@ -1,0 +1,429 @@
+﻿<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{411ADD37-8590-41D6-B8C3-806A6C865921}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DXApplication9</RootNamespace>
+    <AssemblyName>DXApplication9</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevComponents.DotNetBar2">
+      <HintPath>..\..\..\..\Downloads\quan-ly-hoc-sinh-main\quan-ly-hoc-sinh-main\BUS\bin\Debug\DevComponents.DotNetBar2.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.BonusSkins.v22.2" />
+    <Reference Include="DevExpress.Data.Desktop.v22.2" />
+    <Reference Include="DevExpress.Drawing.v22.2" />
+    <Reference Include="DevExpress.Data.v22.2" />
+    <Reference Include="DevExpress.Utils.v22.2" />
+    <Reference Include="DevExpress.Sparkline.v22.2.Core" />
+    <Reference Include="DevExpress.XtraBars.v22.2, Version=22.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v22.2" />
+    <Reference Include="DevExpress.Printing.v22.2.Core" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.ReportViewer.Common, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.140.340.80\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.140.340.80\lib\net40\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Design, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.140.340.80\lib\net40\Microsoft.ReportViewer.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.140.340.80\lib\net40\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.140.340.80\lib\net40\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.SqlServer.Types.14.0.314.76\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BUS\HanhKiemBUS.cs" />
+    <Compile Include="BUS\HocKyBUS.cs" />
+    <Compile Include="BUS\HocLucBUS.cs" />
+    <Compile Include="BUS\HocSinhBUS.cs" />
+    <Compile Include="BUS\KetQuaBUS.cs" />
+    <Compile Include="BUS\KhoiLopBUS.cs" />
+    <Compile Include="BUS\KQHSCaNamBUS.cs" />
+    <Compile Include="BUS\KQHSMonHocBUS.cs" />
+    <Compile Include="BUS\KQLHHockyBUS.cs" />
+    <Compile Include="BUS\KQLHMonHocBUS.cs" />
+    <Compile Include="BUS\LoaiNguoiDungBUS.cs" />
+    <Compile Include="BUS\LopBUS.cs" />
+    <Compile Include="BUS\NamHocBUS.cs" />
+    <Compile Include="BUS\NguoiDungBUS.cs" />
+    <Compile Include="BUS\PhanLopBUS.cs" />
+    <Compile Include="BUS\QuyDinhBUS.cs" />
+    <Compile Include="BUS\ScoreBUS.cs" />
+    <Compile Include="BUS\SubjectBUS.cs" />
+    <Compile Include="BUS\UtilitiesBUS.cs" />
+    <Compile Include="Class_seperate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Class_seperate.Designer.cs">
+      <DependentUpon>Class_seperate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\Helpers.cs" />
+    <Compile Include="DanhSachHocSinh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DanhSachHocSinh.Designer.cs">
+      <DependentUpon>DanhSachHocSinh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DAO\DataProvider.cs" />
+    <Compile Include="DAO\HanhKiemDAO.cs" />
+    <Compile Include="DAO\HocKyDAO.cs" />
+    <Compile Include="DAO\HocLucDAO.cs" />
+    <Compile Include="DAO\HocSinhDAO.cs" />
+    <Compile Include="DAO\KetQuaDAO.cs" />
+    <Compile Include="DAO\KhoiLopDAO.cs" />
+    <Compile Include="DAO\KQHSCaNamDAO.cs" />
+    <Compile Include="DAO\KQHSMonHocDAO.cs" />
+    <Compile Include="DAO\KQLHHocKyDAO.cs" />
+    <Compile Include="DAO\KQLHMonHocDAO.cs" />
+    <Compile Include="DAO\LoaiNguoiDungDAO.cs" />
+    <Compile Include="DAO\LopDAO.cs" />
+    <Compile Include="DAO\NamHocDAO.cs" />
+    <Compile Include="DAO\NguoiDungDAO.cs" />
+    <Compile Include="DAO\PhanLopDAO.cs" />
+    <Compile Include="DAO\QuyDinhDAO.cs" />
+    <Compile Include="DAO\ScoreDAO.cs" />
+    <Compile Include="DAO\SubjectDAO.cs" />
+    <Compile Include="DTO\HanhKiemDTO.cs" />
+    <Compile Include="DTO\HocKyDTO.cs" />
+    <Compile Include="DTO\HocLucDTO.cs" />
+    <Compile Include="DTO\HocSinhDTO.cs" />
+    <Compile Include="DTO\KetQuaDTO.cs" />
+    <Compile Include="DTO\KQHSCaNamDTO.cs" />
+    <Compile Include="DTO\KQHSMonHocDTO.cs" />
+    <Compile Include="DTO\KQLHHocKyDTO.cs" />
+    <Compile Include="DTO\KQLHMonHocDTO.cs" />
+    <Compile Include="DTO\LoaiNguoiDungDTO.cs" />
+    <Compile Include="DTO\LopDTO.cs" />
+    <Compile Include="DTO\NamHocDTO.cs" />
+    <Compile Include="DTO\NguoiDungDTO.cs" />
+    <Compile Include="DTO\PhanLopDTO.cs" />
+    <Compile Include="DTO\ScoreDTO.cs" />
+    <Compile Include="DTO\SubjectDTO.cs" />
+    <Compile Include="Hanh_kiem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Hanh_kiem.Designer.cs">
+      <DependentUpon>Hanh_kiem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HocKy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HocKy.Designer.cs">
+      <DependentUpon>HocKy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Hoc_luc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Hoc_luc.Designer.cs">
+      <DependentUpon>Hoc_luc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HoSoLopHoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HoSoLopHoc.Designer.cs">
+      <DependentUpon>HoSoLopHoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Khoi_Lop.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Khoi_Lop.Designer.cs">
+      <DependentUpon>Khoi_Lop.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KQHSCaNam.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KQHSCaNam.Designer.cs">
+      <DependentUpon>KQHSCaNam.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KQHSMonHoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KQHSMonHoc.Designer.cs">
+      <DependentUpon>KQHSMonHoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KQLHHocKy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KQLHHocKy.Designer.cs">
+      <DependentUpon>KQLHHocKy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KQLHMonHoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KQLHMonHoc.Designer.cs">
+      <DependentUpon>KQLHMonHoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lop.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lop.Designer.cs">
+      <DependentUpon>Lop.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main page.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main page.Designer.cs">
+      <DependentUpon>Main page.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Nam_hoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Nam_hoc.Designer.cs">
+      <DependentUpon>Nam_hoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Password change.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Password change.Designer.cs">
+      <DependentUpon>Password change.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Quy_dinh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Quy_dinh.Designer.cs">
+      <DependentUpon>Quy_dinh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Result.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Result.Designer.cs">
+      <DependentUpon>Result.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Score.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Score.Designer.cs">
+      <DependentUpon>Score.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SqlServerTypes\Loader.cs" />
+    <Compile Include="Student.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Student.Designer.cs">
+      <DependentUpon>Student.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Subject.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Subject.Designer.cs">
+      <DependentUpon>Subject.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Term.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Term.Designer.cs">
+      <DependentUpon>Term.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Thay_đổi_quy_định.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Thay_đổi_quy_định.Designer.cs">
+      <DependentUpon>Thay_đổi_quy_định.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Log_in.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Log_in.Designer.cs">
+      <DependentUpon>Log_in.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Users.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Users.Designer.cs">
+      <DependentUpon>Users.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XemDiem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="XemDiem.Designer.cs">
+      <DependentUpon>XemDiem.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Class_seperate.resx">
+      <DependentUpon>Class_seperate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DanhSachHocSinh.rdlc" />
+    <EmbeddedResource Include="DanhSachHocSinh.resx">
+      <DependentUpon>DanhSachHocSinh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Hanh_kiem.resx">
+      <DependentUpon>Hanh_kiem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HocKy.resx">
+      <DependentUpon>HocKy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Hoc_luc.resx">
+      <DependentUpon>Hoc_luc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HoSoLopHoc.rdlc" />
+    <EmbeddedResource Include="HoSoLopHoc.resx">
+      <DependentUpon>HoSoLopHoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Khoi_Lop.resx">
+      <DependentUpon>Khoi_Lop.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KQHSCaNam.rdlc" />
+    <EmbeddedResource Include="KQHSCaNam.resx">
+      <DependentUpon>KQHSCaNam.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KQHSMonHoc.rdlc" />
+    <EmbeddedResource Include="KQHSMonHoc.resx">
+      <DependentUpon>KQHSMonHoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KQLHHocKy.rdlc" />
+    <EmbeddedResource Include="KQLHHocKy.resx">
+      <DependentUpon>KQLHHocKy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KQLHMonHoc.rdlc" />
+    <EmbeddedResource Include="KQLHMonHoc.resx">
+      <DependentUpon>KQLHMonHoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lop.resx">
+      <DependentUpon>Lop.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main page.resx">
+      <DependentUpon>Main page.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Nam_hoc.resx">
+      <DependentUpon>Nam_hoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Password change.resx">
+      <DependentUpon>Password change.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Quy_dinh.resx">
+      <DependentUpon>Quy_dinh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Result.resx">
+      <DependentUpon>Result.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Score.resx">
+      <DependentUpon>Score.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Student.resx">
+      <DependentUpon>Student.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Subject.resx">
+      <DependentUpon>Subject.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Term.resx">
+      <DependentUpon>Term.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Thay_đổi_quy_định.resx">
+      <DependentUpon>Thay_đổi_quy_định.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Log_in.resx">
+      <DependentUpon>Log_in.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Users.resx">
+      <DependentUpon>Users.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XemDiem.resx">
+      <DependentUpon>XemDiem.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+    <None Include="Properties\DataSources\DXApplication9.DTO.HanhKiemDTO.datasource" />
+    <None Include="Properties\DataSources\DXApplication9.DTO.HocKyDTO.datasource" />
+    <None Include="Properties\DataSources\DXApplication9.DTO.HocLucDTO.datasource" />
+    <None Include="Properties\DataSources\DXApplication9.DTO.HocSinhDTO.datasource" />
+    <None Include="Properties\DataSources\DXApplication9.DTO.KetQuaDTO.datasource" />
+    <None Include="Properties\DataSources\DXApplication9.DTO.KQHSCaNamDTO.datasource" />
+    <None Include="Properties\DataSources\DXApplication9.DTO.KQHSMonHocDTO.datasource" />
+    <None Include="Properties\DataSources\DXApplication9.DTO.KQLHHocKyDTO.datasource" />
+    <None Include="Properties\DataSources\DXApplication9.DTO.KQLHMonHocDTO.datasource" />
+    <None Include="Properties\DataSources\DXApplication9.DTO.LoaiNguoiDungDTO.datasource" />
+    <None Include="Properties\DataSources\DXApplication9.DTO.LopDTO.datasource" />
+    <None Include="Properties\DataSources\DXApplication9.DTO.NamHocDTO.datasource" />
+    <None Include="Properties\DataSources\DXApplication9.DTO.NguoiDungDTO.datasource" />
+    <None Include="Properties\DataSources\DXApplication9.DTO.PhanLopDTO.datasource" />
+    <None Include="Properties\DataSources\DXApplication9.DTO.ScoreDTO.datasource" />
+    <None Include="Properties\DataSources\DXApplication9.DTO.SubjectDTO.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="SqlServerTypes\readme.htm" />
+    <Content Include="SqlServerTypes\x64\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x64\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
